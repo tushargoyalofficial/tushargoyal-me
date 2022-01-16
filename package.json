@@ -8,9 +8,15 @@
     "prettier": "prettier --write .",
     "lint": "next lint"
   },
-  "keywords": [],
+  "keywords": [
+    "NextJS",
+    "Portfolio"
+  ],
   "author": "Tushar Goyal",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tushargoyalofficial/tushargoyal-me"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.7.4",
