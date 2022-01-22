@@ -10,6 +10,7 @@ import {
 import Paragraph from '../components/Paragraph'
 import Section from '../components/Section'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/Bio'
 
 const Home = () => (
   <Container>
@@ -69,6 +70,53 @@ const Home = () => (
           </Button>
         </NextLink>
       </Box>
+    </Section>
+    <Section delay={0.2}>
+      <Heading as="h3" variant="section-title">
+        Bio
+      </Heading>
+      <BioSection>
+        <BioYear>1992</BioYear>
+        Born in Madhya Pradesh, India
+      </BioSection>
+      <BioSection>
+        <BioYear>2014</BioYear>
+        Completed the Bachlor&apos;s Program in college of Computer Science at
+        RGPV University, India
+      </BioSection>
+      <BioSection>
+        <BioYear>2015</BioYear>
+        Worked at ABP Group, Delhi, India
+      </BioSection>
+      <BioSection>
+        <BioYear>2017</BioYear>
+        Worked at Eulogik, MP, India
+      </BioSection>
+      <BioSection>
+        <BioYear>2018</BioYear>
+        Worked at Chapter247, MP, India
+      </BioSection>
+      <BioSection>
+        <BioYear>2020</BioYear>
+        Worked at Hiteshi Infotech, MP, India
+      </BioSection>{' '}
+      <BioSection>
+        <BioYear>2020</BioYear>
+        Worked at Protonshub Technologies, MP, India
+      </BioSection>{' '}
+      <BioSection>
+        <BioYear>2021 to present</BioYear>
+        Work as a freelance
+      </BioSection>
+    </Section>
+    <Section delay={0.3}>
+      <Heading as="h3" variant="section-title">
+        I ♥
+      </Heading>
+      <Paragraph>
+        Food, Music, Long Rides, Travel, Block-Chain, Machine Learning, Reading
+        Tech Articles, Blogs, Creating new stuffs
+      </Paragraph>
     </Section>
   </Container>
 )
