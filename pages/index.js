@@ -6,7 +6,6 @@ import {
   Image,
   useColorModeValue,
   Button,
-  SimpleGrid,
   List,
   ListItem,
   Link,
@@ -17,7 +16,6 @@ import Layout from '../components/layouts/Article'
 import Section from '../components/Section'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/Bio'
-import { GridItem } from '../components/GridItem'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const Home = () => (
