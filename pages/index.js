@@ -5,13 +5,20 @@ import {
   Heading,
   Image,
   useColorModeValue,
-  Button
+  Button,
+  SimpleGrid,
+  List,
+  ListItem,
+  Link,
+  Icon
 } from '@chakra-ui/react'
 import Paragraph from '../components/Paragraph'
 import Layout from '../components/layouts/Article'
 import Section from '../components/Section'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/Bio'
+import { GridItem } from '../components/GridItem'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const Home = () => (
   <Layout>
@@ -119,6 +126,41 @@ const Home = () => (
           Food, Music, Long Rides, Travel, Block-Chain, Machine Learning,
           Reading Tech Articles, Blogs, Creating new stuffs
         </Paragraph>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link
+              href="https://www.github.com/tushargoyalofficial"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @tushargoyalofficial
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.linkedin.com/in/tushargoyalofficial/"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
+              >
+                @iamtushargoyal
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
       </Section>
     </Container>
   </Layout>
