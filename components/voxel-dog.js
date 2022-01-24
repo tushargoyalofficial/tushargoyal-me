@@ -3,7 +3,7 @@ import { Box, Spinner } from '@chakra-ui/react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { setConfig } from 'next/config'
+// import { setConfig } from 'next/config'
 
 function easeOutCircle(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -13,6 +13,7 @@ const VoxelDog = () => {
   const refContainer = React.useRef()
   const [loading, setLoading] = React.useState(true)
   const [renderer, setRenderer] = React.useState()
+  // eslint-disable-next-line no-unused-vars
   const [_camera, setCamera] = React.useState()
   const [target] = React.useState(new THREE.Vector3(-0.5, 1.2, 0))
   const [initialCameraPosition] = React.useState(
@@ -23,6 +24,7 @@ const VoxelDog = () => {
     )
   )
   const [scene] = React.useState(new THREE.Scene())
+  // eslint-disable-next-line no-unused-vars
   const [controls, setControls] = React.useState()
 
   const handleWindowResize = React.useCallback(() => {
@@ -35,7 +37,7 @@ const VoxelDog = () => {
     }
   }, [renderer])
 
-  /* eslint-disable react-hooks/exhaustivetive-deps */
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   React.useEffect(() => {
     const { current: container } = refContainer
     if (container && !renderer) {
